@@ -1,0 +1,27 @@
+main img {
+    width: 150;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-sizing: 0 0 30px gray;
+}
+
+aside {
+    width: 20em;
+    margin: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
