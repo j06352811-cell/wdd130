@@ -1,0 +1,128 @@
+* { box-sizing: border-box; }
+
+body {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 14px;
+	color: #111;
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.container {
+	display: block;
+	min-height: 112px;
+	padding: 10px 14px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: #173c73;
+	font-size: 1.6rem;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+.logo-icon {
+	display: grid;
+	width: 74px;
+	height: 68px;
+	place-items: center;
+	border: 7px solid #e8a82c;
+	border-radius: 50% 50% 45% 45%;
+	color: #fff;
+	background: #2269a5;
+	font-size: 2.5rem;
+	font-style: italic;
+	transform: rotate(-8deg);
+}
+
+.hero {
+	position: relative;
+	height: 490px;
+	overflow: hidden;
+}
+
+.hero-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.hero h1 {
+	position: absolute;
+	top: 28px;
+	right: 0;
+	left: 0;
+	margin: 0;
+	padding: 7px;
+	color: white;
+	background: rgb(23 60 115 / 0.85);
+	font-size: clamp(1.4rem, 3vw, 2rem);
+	text-align: center;
+}
+
+.hero-message {
+	position: absolute;
+	right: 26px;
+	bottom: 28px;
+	left: 26px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	min-height: 82px;
+	padding: 12px;
+	color: white;
+	background: rgb(23 60 115 / 0.85);
+}
+
+.hero-message p { margin: 0; line-height: 1.35; }
+.message-image { width: 130px; height: 78px; object-fit: cover; }
+
+.content-section { margin-top: 28px; }
+.content-section h2 {
+	margin: 0;
+	padding: 12px;
+	color: white;
+	background: #173c73;
+	font-size: 1.25rem;
+	text-align: center;
+}
+.content-section p { margin: 14px; line-height: 1.35; }
+.adventure { margin-bottom: 28px; }
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 14px 8px;
+	border-top: 1px solid #ddd;
+	color: #222;
+}
+
+footer p { margin: 0; }
+.social-links { display: flex; align-items: center; gap: 14px; }
+.social-links a {
+	display: grid;
+	width: 38px;
+	height: 38px;
+	place-items: center;
+	color: white;
+	background: #4267a9;
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.social-links a:nth-child(2) { color: #111; background: white; font-size: 30px; }
+.social-links a:nth-child(3) { border-radius: 10px; background: linear-gradient(135deg, #4741a2, #e84372, #f4a51c); }
+
+@media (max-width: 700px) {
+	.hero { height: 490px; }
+	.hero-message { right: 12px; bottom: 12px; left: 12px; gap: 10px; }
+	.message-image { width: 90px; height: 60px; }
+}
