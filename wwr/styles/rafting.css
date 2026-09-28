@@ -51,14 +51,11 @@ body {
 }
 
 header nav {
-    background: var(--nav-bg);
-}
-
-header nav {
     display: flex;
     justify-content: flex-end;
     gap: 18px;
     flex-wrap: wrap;
+    background: var(--nav-bg);
 }
 
 header nav a {
@@ -69,6 +66,7 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus-visible {
+    text-decoration-color: var(--accent-color);
     text-decoration: underline;
 }
 
