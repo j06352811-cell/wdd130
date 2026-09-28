@@ -134,7 +134,7 @@ header nav a:focus-visible {
 
 .content-section#history {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr minmax(180px, 0.8fr) 1fr;
     align-items: center;
     gap: 12px 24px;
     padding: 0 14px;
@@ -199,9 +199,9 @@ header nav a:focus-visible {
 }
 
 footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
     gap: 1rem;
     padding: 12px 14px 8px;
     border-top: 1px solid var(--border-color);
@@ -209,13 +209,16 @@ footer {
 }
 
 footer p {
+    grid-column: 2;
     margin: 0;
+    text-align: center;
 }
 
 .socialmedia {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: right 8px;
 }
 
 .socialmedia a {
