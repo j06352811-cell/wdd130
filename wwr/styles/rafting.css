@@ -7,7 +7,12 @@
     --primary-color: #173c73;
     --accent-color: #e8a82c;
     --light-color: #fff;
+    --panel-bg: #f4f4f4;
+    --button-hover: #0f2e57;
+    --avatar-bg: #d9ccf0;
+    --shadow-color: rgb(23 60 115 / 0.08);
     --overlay-bg: rgb(23 60 115 / 0.85);
+    --transparent: transparent;
 }
 
 * {
@@ -194,12 +199,21 @@ header nav a:focus-visible {
     margin: 0 0 8px;
     padding: 0;
     color: var(--title-color);
-    background: transparent;
+    background: var(--transparent);
     font-size: 1.3rem;
 }
 
 .company-contact address {
     font-style: normal;
+}
+
+.contact-photo {
+    display: block;
+    width: min(100%, 320px);
+    height: auto;
+    margin: 14px auto 0;
+    border: 1px solid var(--border-color);
+    object-fit: cover;
 }
 
 .company-contact a,
@@ -219,8 +233,8 @@ header nav a:focus-visible {
 .contact-form,
 .team-profile {
     border: 1px solid var(--border-color);
-    background: #f4f4f4;
-    box-shadow: 0 2px 6px rgb(23 60 115 / 0.08);
+    background: var(--panel-bg);
+    box-shadow: 0 2px 6px var(--shadow-color);
 }
 
 .contact-map {
@@ -317,14 +331,14 @@ header nav a:focus-visible {
 
 .contact-form button:hover,
 .contact-form button:focus-visible {
-    background: #0f2e57;
+    background: var(--button-hover);
 }
 
 .team-section {
     margin: 0 14px 24px;
     padding: 14px;
     border: 1px solid var(--border-color);
-    background: #f4f4f4;
+    background: var(--panel-bg);
 }
 
 .team-section > h2 {
@@ -351,7 +365,7 @@ header nav a:focus-visible {
     margin: 0 auto 8px;
     overflow: hidden;
     border-radius: 50%;
-    background: #d9ccf0;
+    background: var(--avatar-bg);
 }
 
 .employee-avatar::before {

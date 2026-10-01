@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Rapids! to plan your next rafting trip.">
+    <meta name="description"
+      content="Contact Rapids! today to plan your next exciting whitewater rafting adventure and explore our guided river trips!">
     <meta name="author" content="Joshua Claude Thompson">
     <link rel="stylesheet" href="styles/rafting.css">
     <title>Contact Us | Rapids!</title>
@@ -33,6 +34,9 @@
                     <a href="tel:+18005551234">+1 (800) 555-1234</a><br>
                     <a href="mailto:hello@rapidsadventures.com">hello@rapidsadventures.com</a>
                 </address>
+                <img class="contact-photo" src="images/rafting-gallery.jpg"
+                  alt="Rafters paddling together through a forested river canyon"
+                  width="900" height="514" loading="lazy" decoding="async">
             </div>
 
             <div class="contact-layout">
@@ -59,12 +63,12 @@
                     </div>
                     <fieldset class="form-row inquiry-options">
                         <legend>Message Purpose</legend>
-                        <label><input type="radio" name="purpose" value="general" required>
-                            General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation">
-                            Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="website">
-                            Website Suggestion</label>
+                        <label for="radio1"><input id="radio1" type="radio" name="purpose"
+                          value="general" required> General Inquiry</label>
+                        <label for="radio2"><input id="radio2" type="radio" name="purpose"
+                          value="reservation"> Reservation Question</label>
+                        <label for="radio3"><input id="radio3" type="radio" name="purpose"
+                          value="website"> Website Suggestion</label>
                     </fieldset>
                     <div class="form-row">
                         <label for="message">Message</label>
