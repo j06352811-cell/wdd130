@@ -23,10 +23,85 @@
         </nav>
     </header>
     <main>
-        <section class="content-section">
-            <h1 class="page-title">Contact Rapids!</h1>
-            <p>We would love to help you plan your river adventure. Contact information will be added
-                soon. In the meantime, visit our trips page to explore the available adventures.</p>
+        <section class="content-section contact-page">
+            <h1 class="page-title">Contact Us</h1>
+
+            <div class="company-contact">
+                <h2>White Water Rafting Company</h2>
+                <address>
+                    210 River Bend Road, Moab, UT 84532<br>
+                    <a href="tel:+18005551234">+1 (800) 555-1234</a><br>
+                    <a href="mailto:hello@rapidsadventures.com">hello@rapidsadventures.com</a>
+                </address>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-map">
+                    <iframe
+                      src="https://www.openstreetmap.org/export/embed.html?bbox=-109.65%2C38.52%2C-109.52%2C38.62&amp;layer=mapnik&amp;marker=38.5733%2C-109.5498"
+                      title="Map of the Moab, Utah area"
+                      loading="lazy">
+                    </iframe>
+                    <a href="https://www.openstreetmap.org/?mlat=38.5733&amp;mlon=-109.5498#map=13/38.5733/-109.5498">
+                        View map of Moab
+                    </a>
+                </div>
+
+                <form class="contact-form" action="#" method="get">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com"
+                          required>
+                    </div>
+                    <fieldset class="form-row inquiry-options">
+                        <legend>Message Purpose</legend>
+                        <label><input type="radio" name="purpose" value="general" required>
+                            General Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation">
+                            Reservation Question</label>
+                        <label><input type="radio" name="purpose" value="website">
+                            Website Suggestion</label>
+                    </fieldset>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                          placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <label class="newsletter-option" for="newsletter">
+                        <input id="newsletter" name="newsletter" type="checkbox" value="yes">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                    <button type="submit">Get in Touch</button>
+                </form>
+            </div>
+
+            <section class="team-section" aria-labelledby="team-heading">
+                <h2 id="team-heading">We Are Here to Serve You</h2>
+                <div class="team-grid">
+                    <figure class="team-profile">
+                        <div class="employee-avatar" role="img" aria-label="Employee profile placeholder">
+                            <span></span>
+                        </div>
+                        <figcaption>Trip Coordinator</figcaption>
+                    </figure>
+                    <figure class="team-profile">
+                        <div class="employee-avatar" role="img" aria-label="Employee profile placeholder">
+                            <span></span>
+                        </div>
+                        <figcaption>River Guide</figcaption>
+                    </figure>
+                    <figure class="team-profile">
+                        <div class="employee-avatar" role="img" aria-label="Employee profile placeholder">
+                            <span></span>
+                        </div>
+                        <figcaption>Safety Lead</figcaption>
+                    </figure>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
