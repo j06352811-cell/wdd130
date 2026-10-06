@@ -9,10 +9,8 @@
     --light-color: #fff;
     --panel-bg: #f4f4f4;
     --button-hover: #0f2e57;
-    --avatar-bg: #d9ccf0;
     --shadow-color: #173c7314;
     --overlay-bg: #173c73d9;
-    --transparent: #0000;
 }
 
 * {
@@ -197,7 +195,7 @@ header nav a:focus-visible {
     margin: 0 0 8px;
     padding: 0;
     color: var(--title-color);
-    background: var(--transparent);
+    background: var(--page-bg);
     font-size: 1.3rem;
 }
 
@@ -356,34 +354,12 @@ header nav a:focus-visible {
 }
 
 .employee-avatar {
-    position: relative;
+    display: block;
     width: 92px;
     height: 92px;
     margin: 0 auto 8px;
-    overflow: hidden;
     border-radius: 50%;
-    background: var(--avatar-bg);
-}
-
-.employee-avatar::before {
-    position: absolute;
-    top: 17px;
-    left: 32px;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    content: "";
-}
-
-.employee-avatar span {
-    position: absolute;
-    right: 17px;
-    bottom: -8px;
-    left: 17px;
-    height: 46px;
-    border-radius: 50% 50% 0 0;
-    background: var(--primary-color);
+    object-fit: cover;
 }
 
 .adventure {
