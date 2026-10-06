@@ -1,11 +1,19 @@
+:root {
+    --color-333: #333;
+    --color-bbb: #bbb;
+    --color-darkcyan: #008b8b;
+    --color-lightyellow: #ffffe0;
+    --color-rgb-0-0-0-20: #00000033;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 1rem;
 }
 
 .flex-container {
-    border: 3px dashed darkcyan;
-    background-color: lightyellow;
+    border: 3px dashed var(--color-darkcyan);
+    background-color: var(--color-lightyellow);
     display: flex;
     flex-wrap: wrap;
 }
@@ -13,10 +21,10 @@ body {
 .flex-item {
     width: 250px;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 20%);
+    border: 1px solid var(--color-rgb-0-0-0-20);
     padding: 0.5rem;
-    background-color: #bbb;
-    color: #333;
+    background-color: var(--color-bbb);
+    color: var(--color-333);
 }
 
 .item1 {

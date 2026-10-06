@@ -1,3 +1,10 @@
+:root {
+    --color-aba: #aba;
+    --color-abb: #abb;
+    --color-abd: #abd;
+    --color-ace: #ace;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,14 +29,14 @@ div {
 }
 
 .flex {
-    background-color: #aba;
+    background-color: var(--color-aba);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .grid {
-    background-color: #abb;
+    background-color: var(--color-abb);
     display: grid;
     place-items: center;
 }
@@ -41,7 +48,7 @@ div {
 }
 
 .two {
-    background-color: #ace;
+    background-color: var(--color-ace);
     height: 100px;
 }
 
@@ -55,5 +62,5 @@ div {
 
 .three {
     margin: .25rem;
-    background-color: #abd;
+    background-color: var(--color-abd);
 }

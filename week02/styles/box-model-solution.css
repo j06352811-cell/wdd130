@@ -1,18 +1,26 @@
+:root {
+    --color-000: #000;
+    --color-247: #247;
+    --color-bbb: #bbb;
+    --color-fff: #fff;
+    --color-rgba-0-0-0-1: #0000001a;
+}
+
 .callout {
     max-width: 400px;
     margin: 10px;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid var(--color-rgba-0-0-0-1);
     padding: 15px;
-    background-color: #247;
-    color: #fff;
+    background-color: var(--color-247);
+    color: var(--color-fff);
 }
 
 .callout img {
     float: right;
     margin: 0 0 10px 15px;
-    border: 1px solid #000;
+    border: 1px solid var(--color-000);
     padding: 3px;
-    background-color: #bbb;
+    background-color: var(--color-bbb);
     width: 100px;
     height: auto;
 
@@ -24,7 +32,7 @@ blockquote {
 
 cite {
     display: block;
-    border-top: 1px dotted #fff;
+    border-top: 1px dotted var(--color-fff);
     padding-top: 3px;
     text-align: right;
     font-size: smaller;

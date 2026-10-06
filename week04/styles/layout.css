@@ -1,9 +1,18 @@
+:root {
+    --color-ccc: #ccc;
+    --color-ddd: #ddd;
+    --color-maroon: #800000;
+    --color-navy: #000080;
+    --color-rgb-0-0-0-10: #0000001a;
+    --color-tomato: #ff6347;
+}
+
 header {
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--color-ccc);
     max-width: 1000px;
 }
 
@@ -29,14 +38,14 @@ header {
 
 .navigation a {
     display: block;
-    color: navy;
+    color: var(--color-navy);
     padding: 20px;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .navigation a:hover {
-    color: tomato;
+    color: var(--color-tomato);
     text-decoration: underline;
 }
 
@@ -51,15 +60,15 @@ h1 {
 }
 
 h2 {
-    color: Maroon;
+    color: var(--color-maroon);
     font-size: 1.25rem;
 }
 
 section {
     margin: 1em auto;
     padding: 1em;
-    border: 1px solid rgb(0 0 0 / 10%);
-    background-color: #ddd;
+    border: 1px solid var(--color-rgb-0-0-0-10);
+    background-color: var(--color-ddd);
     width: min(800px, 100%);
 }
 

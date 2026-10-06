@@ -1,10 +1,20 @@
+:root {
+    --color-2a3a4a: #2a3a4a;
+    --color-36454f: #36454f;
+    --color-4a5a6a: #4a5a6a;
+    --color-bed: #bed;
+    --color-fff: #fff;
+    --color-rgb-0-0-0-10: #0000001a;
+    --color-white: #fff;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 1rem;
 }
 
 nav {
-    background-color: #36454f;
+    background-color: var(--color-36454f);
 }
 
 nav ul {
@@ -19,7 +29,7 @@ nav ul {
 
 nav a {
     display: block;
-    color: #fff;
+    color: var(--color-fff);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -27,15 +37,15 @@ nav a {
 
 p {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid var(--color-rgb-0-0-0-10);
     padding: 1rem;
-    background-color: #bed;
+    background-color: var(--color-bed);
     max-width: 400px;
 }
 
 #devtools-btn {
-    background-color: #36454f;
-    color: white;
+    background-color: var(--color-36454f);
+    color: var(--color-white);
     border: none;
     padding: 12px 24px;
     margin: 1rem;
@@ -47,9 +57,9 @@ p {
 }
 
 #devtools-btn:hover {
-    background-color: #4a5a6a;
+    background-color: var(--color-4a5a6a);
 }
 
 #devtools-btn:active {
-    background-color: #2a3a4a;
+    background-color: var(--color-2a3a4a);
 }

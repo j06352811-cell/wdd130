@@ -1,3 +1,17 @@
+:root {
+    --color-000: #000;
+    --color-333: #333;
+    --color-999: #999;
+    --color-ddd: #ddd;
+    --color-dddddd: #dddddd;
+    --color-efefaa: #efefaa;
+    --color-darkgreen: #006400;
+    --color-rgb-0-0-0-10: #0000001a;
+    --color-rgb-0-110-182: #006eb6;
+    --color-white: #fff;
+    --color-yellow: #ff0;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -6,7 +20,7 @@ body {
 }
 
 h1 {
-    border-bottom: 1px solid rgb(0 110 182);
+    border-bottom: 1px solid var(--color-rgb-0-110-182);
     padding-bottom: 0;
 }
 
@@ -17,7 +31,7 @@ p {
 }
 
 code {
-    color: darkgreen;
+    color: var(--color-darkgreen);
     font-weight: 700;
     font-size: 1.4rem;
 }
@@ -26,32 +40,33 @@ code {
 
 .box {
     margin: 20px 0;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid var(--color-rgb-0-0-0-10);
     padding: 10px;
-    background-color: #ddd; /* this is shorthand for #dddddd */
+    background-color: var(--color-ddd); /* this is shorthand for var(--color-dddddd) */
 }
 
 .highlight {
-    background-color: #efefaa;
+    background-color: var(--color-efefaa);
     border-radius: 25px;
     padding: 25px;
 }
 
 /* ID examples - should be unique */
 
-#note {
-    background-color: #333;
-    color: white;
+#note,
+.note-example {
+    background-color: var(--color-333);
+    color: var(--color-white);
     width: fit-content;
 }
 
 #note code {
-    color: yellow;
+    color: var(--color-yellow);
 }
 
 #best-practice {
-    background: linear-gradient(135deg, #000 0%, #999 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--color-000) 0%, var(--color-999) 100%);
+    color: var(--color-white);
     border-radius: 20px;
     padding: 20px
 }

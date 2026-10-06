@@ -1,4 +1,14 @@
-*{
+:root {
+    --color-000: #000;
+    --color-111: #111;
+    --color-ddd: #ddd;
+    --color-eee: #eee;
+    --color-fff: #fff;
+    --color-navy: #000080;
+    --color-rgb-0-0-0-10: #0000001a;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,54 +16,55 @@
 
 main {
     max-width: 500px;
-     margin: 1rem;
-     border: 1px solid rgb(0 0 0 10%);
-     padding: 1rem;
-    background-color: #ddd;
-    color: #fff;
+    margin: 1rem;
+    border: 1px solid var(--color-rgb-0-0-0-10);
+    padding: 1rem;
+    background-color: var(--color-ddd);
+    color: var(--color-111);
 }
 
 h1 {
-   margin: .5rem;
+    margin: .5rem;
 }
 
 form {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid var(--color-rgb-0-0-0-10);
     padding: 1rem;
-    background-color: #ddd;
-    color: #111;
+    background-color: var(--color-ddd);
+    color: var(--color-111);
 }
 
 input,
 textarea,
-select,button {
- padding: .75rem;
- width: 350px;
+select,
+button {
+    padding: .75rem;
+    width: 350px;
 }
 
-button{
- background-color: navy; 
- color: #fff; 
- margin: 0 auto;
- display: block;
- border-radius: .5rem;
-  border: 1px solid rgb(0 0 0 / 10%);
-  box-sizing: 0 0 0 15px #eee;
+button {
+    background-color: var(--color-navy);
+    color: var(--color-fff);
+    margin: 0 auto;
+    display: block;
+    border-radius: .5rem;
+    border: 1px solid var(--color-rgb-0-0-0-10);
+    box-shadow: 0 0 0 15px var(--color-eee);
 }
 
 code {
     display: block;
-    background-color: #000;
-    color: #fff;
-    }
+    background-color: var(--color-000);
+    color: var(--color-fff);
+}
 
 .box {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid var(--color-rgb-0-0-0-10);
     padding: 1rem;
 }
 
 .quiz-item {
-border: none;
+    border: none;
 }

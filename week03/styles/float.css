@@ -1,9 +1,17 @@
+:root {
+    --color-555: #555;
+    --color-777: #777;
+    --color-eee: #eee;
+    --color-rgb-0-0-0-1: #0000001a;
+    --color-rgba-0-0-0-3: #0000004d;
+}
+
 main {
     width: 75vw;
     margin: 1rem auto;
-    background-color: #eee;
+    background-color: var(--color-eee);
     padding: 1rem;
-    border: 1px solid rgb(0 0 0 / .1);
+    border: 1px solid var(--color-rgb-0-0-0-1);
 }
 
 p {
@@ -13,12 +21,12 @@ p {
 .col1 img {
     float: right;
     margin: 0 0 15px 15px;
-    border: 1px solid rgba(0 0 0 / .3);
-    box-shadow: 0 0 30px #777;
+    border: 1px solid var(--color-rgba-0-0-0-3);
+    box-shadow: 0 0 30px var(--color-777);
 }
 
 footer {
-    border-top: 1px solid #555;
+    border-top: 1px solid var(--color-555);
     padding-top: 5px;
     /* Remove the comment below and observe the results. */
 

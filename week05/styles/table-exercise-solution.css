@@ -1,6 +1,13 @@
+:root {
+    --color-000: #000;
+    --color-fff: #fff;
+    --color-rgb-140-140-140: #8c8c8c;
+    --color-rgb-160-160-160: #a0a0a0;
+}
+
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
+    border: 2px solid var(--color-rgb-140-140-140);
     font-family: sans-serif;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -8,14 +15,14 @@ table {
 
 th,
 td {
-    border: 1px solid rgb(160 160 160);
+    border: 1px solid var(--color-rgb-160-160-160);
     padding: 8px 10px;
     text-align: center;
 }
 
 thead th,
 tfoot tr {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-000);
+    color: var(--color-fff);
     font-weight: 700;
 }

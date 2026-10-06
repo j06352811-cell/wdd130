@@ -2,6 +2,15 @@
 	--primary-color: #173c73;
 	--accent-color: #e8a82c;
 	--light-color: #fff;
+	--text-color: #111;
+	--overlay-color: #173c73d9;
+	--logo-background-color: #2269a5;
+	--border-color: #ddd;
+	--footer-text-color: #222;
+	--facebook-background-color: #4267a9;
+	--instagram-start-color: #4741a2;
+	--instagram-middle-color: #e84372;
+	--instagram-end-color: #f4a51c;
 }
 
 *,
@@ -16,8 +25,8 @@ body {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 14px;
-	color: #111;
-	background: white;
+	color: var(--text-color);
+	background: var(--light-color);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 }
@@ -46,7 +55,7 @@ body {
 	border: 7px solid var(--accent-color);
 	border-radius: 50% 50% 45% 45%;
 	color: var(--light-color);
-	background: #2269a5;
+	background: var(--logo-background-color);
 	font-size: 2.5rem;
 	font-style: italic;
 	transform: rotate(-8deg);
@@ -74,7 +83,7 @@ body {
 	margin: 0;
 	padding: 7px;
 	color: var(--light-color);
-	background: rgb(23 60 115 / 0.85);
+	background: var(--overlay-color);
 	font-size: clamp(1.4rem, 3vw, 2rem);
 	text-align: center;
 }
@@ -89,15 +98,8 @@ body {
 	gap: 24px;
 	min-height: 82px;
 	padding: 12px;
-	color: white;
-	background: rgb(23 60 115 / 0.85);
-}
-
-.hero article {
-	position: absolute;
-	right: 26px;
-	bottom: 28px;
-	left: 26px;
+	color: var(--light-color);
+	background: var(--overlay-color);
 }
 
 .hero-message p {
@@ -124,7 +126,7 @@ body {
 	margin: 0;
 	padding: 12px;
 	color: var(--light-color);
-	background: #173c73;
+	background: var(--primary-color);
 	font-size: 1.25rem;
 	text-align: center;
 }
@@ -143,8 +145,8 @@ footer {
 	align-items: center;
 	justify-content: space-between;
 	padding: 12px 14px 8px;
-	border-top: 1px solid #ddd;
-	color: #222;
+	border-top: 1px solid var(--border-color);
+	color: var(--footer-text-color);
 }
 
 footer p {
@@ -164,22 +166,22 @@ footer a {
 	width: 38px;
 	height: 38px;
 	place-items: center;
-	color: white;
-	background: #4267a9;
+	color: var(--light-color);
+	background: var(--facebook-background-color);
 	font-size: 28px;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 .social-links a:nth-child(2) {
-	color: #111;
-	background: white;
+	color: var(--text-color);
+	background: var(--light-color);
 	font-size: 30px;
 }
 
 .social-links a:nth-child(3) {
 	border-radius: 10px;
-	background: linear-gradient(135deg, #4741a2, #e84372, #f4a51c);
+	background: linear-gradient(135deg, var(--instagram-start-color), var(--instagram-middle-color), var(--instagram-end-color));
 }
 
 @media (max-width: 700px) {
