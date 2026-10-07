@@ -4,54 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plan your next whitewater rafting adventure with Rapids!">
+    <meta name="description" content="Explore guided whitewater rafting trips, river adventures, and trip planning with Rapids!">
     <meta name="author" content="Joshua Claude Thompson">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>Home | Rapids!</title>
+    <title>Home | Rapids! Whitewater Rafting</title>
 </head>
 
 <body>
     <header class="container">
-        <img class="site-logo" src="images/rafting-logo.svg" alt="Rapids rafting site logo"
-          width="74" height="68">
+        <img class="site-logo" src="images/rafting-logo.svg" alt="Rapids rafting site logo" width="74" height="68">
         <a class="logo" href="index.html">RAPIDS</a>
         <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
+            <a href="index.html" aria-current="page">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/rafting-optimized.jpg" alt="Rafters paddling through a forested river"
-              class="hero-image" width="1200" height="686" fetchpriority="high" decoding="async">
-            <h1>Make Memories with Rapids!</h1>
-            <article class="hero-message">
-                <p>Join our experienced guides for an unforgettable whitewater adventure. Choose a trip
-                    that fits your group and get ready to make memories on the river.</p>
-                <img src="images/rafting-gallery.jpg" alt="A group rafting together on the river"
-                  class="message-image" width="900" height="515" loading="lazy" decoding="async">
-            </article>
-        </div>
-        <section class="content-section">
-            <h2>Find Your Next Adventure</h2>
-            <p>Explore our river trips or learn more about the Rapids! team. We look forward to welcoming
-                you to the water.</p>
+        <section class="hero" aria-labelledby="home-title">
+            <img src="images/rafting-optimized.jpg" alt="A raft crew paddling down a forested river" class="hero-image" width="1200" height="686" fetchpriority="high" decoding="async">
+            <h1 id="home-title">Make Memories with Rapids!</h1>
+            <div class="hero-message">
+                <p>Join our experienced guides for a river trip that fits your crew. Paddle together, take in the canyon scenery, and make a day of it.</p>
+            </div>
+        </section>
+        <section class="home-highlights content-section" aria-labelledby="highlights-title">
+            <h2 id="highlights-title">Find Your Next Adventure</h2>
+            <div class="home-grid">
+                <article class="home-card">
+                    <img class="team-photo" src="images/team/trip-coordinator.jpg" alt="Representative stock photo of a woman wearing a life vest while seated on a boat" width="700" height="467" loading="lazy" decoding="async">
+                    <div>
+                        <h3>Guided River Trips</h3>
+                        <p>Our guided outings bring the crew together on the water. Pick a route that matches your group and enjoy the river with support from an experienced guide.</p>
+                        <p class="image-note">Representative stock team photo.</p>
+                    </div>
+                </article>
+                <article class="home-card">
+                    <img src="images/rafting-optimized.jpg" alt="Kayakers following a green river corridor" width="1200" height="686" loading="lazy" decoding="async">
+                    <div>
+                        <h3>A Trip for Your Crew</h3>
+                        <p>From a first introduction to whitewater to a more active run, Rapids! offers options for different schedules and comfort levels. We can help you choose.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="newsletter content-section" aria-labelledby="newsletter-title">
+            <h2 id="newsletter-title">Get River Updates</h2>
+            <p>Leave your details and our team can help you plan a Rapids! outing.</p>
+            <form class="newsletter-form" action="contact.html" method="get">
+                <div class="form-row">
+                    <label for="newsletter-name">Name</label>
+                    <input id="newsletter-name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="newsletter-email">Email</label>
+                    <input id="newsletter-email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <button type="submit">Ask about a trip</button>
+            </form>
+        </section>
+        <section class="home-cta" aria-labelledby="home-cta-title">
+            <h2 id="home-cta-title">Ready to get on the water?</h2>
+            <p>Compare routes and find the Rapids! trip that suits your group.</p>
+            <a class="button-link" href="trips.html">Explore rafting trips</a>
         </section>
     </main>
     <footer>
         <p>&copy; 2026 | Rapids! | Joshua Claude Thompson</p>
         <nav class="socialmedia" aria-label="Social media links">
-            <a href="https://www.facebook.com/" aria-label="Facebook">
-                <img src="images/facebook.svg" alt="Facebook icon" width="38" height="38">
-            </a>
-            <a href="https://x.com/" aria-label="X">
-                <img src="images/social-x.svg" alt="X social media icon" width="38" height="38">
-            </a>
-            <a href="https://www.instagram.com/" aria-label="Instagram">
-                <img src="images/instagram.svg" alt="Instagram icon" width="38" height="38">
-            </a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"><img src="images/facebook.svg" alt="" width="38" height="38"></a>
+            <a href="https://x.com/" aria-label="X"><img src="images/social-x.svg" alt="" width="38" height="38"></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><img src="images/instagram.svg" alt="" width="38" height="38"></a>
         </nav>
     </footer>
 </body>

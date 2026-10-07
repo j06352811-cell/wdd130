@@ -4,70 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore whitewater rafting trips with Rapids!">
+    <meta name="description" content="Compare Rapids! whitewater rafting trips by duration, difficulty, and experience level.">
     <meta name="author" content="Joshua Claude Thompson">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>Trips | Rapids!</title>
+    <title>Rafting Trips | Rapids!</title>
 </head>
 
 <body>
     <header class="container">
-        <img class="site-logo" src="images/rafting-logo.svg" alt="Rapids rafting site logo"
-          width="74" height="68">
+        <img class="site-logo" src="images/rafting-logo.svg" alt="Rapids rafting site logo" width="74" height="68">
         <a class="logo" href="index.html">RAPIDS</a>
         <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
+            <a href="trips.html" aria-current="page">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <section class="content-section adventure">
-            <h1 class="page-title">Rafting Trips</h1>
-            <p>Choose a Rapids! trip and get out on the river with our experienced guides.</p>
-            <div class="adventure-gallery">
-                <figure>
-                    <img src="images/rafting-gallery.jpg" alt="A rafting group navigating whitewater"
-                      width="900" height="515" loading="lazy" decoding="async">
-                    <figcaption>Los Dientes del Diablo</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting-optimized.jpg" alt="Kayakers paddling on a wooded river"
-                      width="1200" height="686" loading="lazy" decoding="async">
-                    <figcaption>Big Mallard</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting-gallery.jpg" alt="Rafters enjoying a river adventure"
-                      width="900" height="515" loading="lazy" decoding="async">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting-optimized.jpg" alt="A guided rafting trip through forest"
-                      width="1200" height="686" loading="lazy" decoding="async">
-                    <figcaption>River Run Escape</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting-gallery.jpg" alt="A group rafting through a canyon"
-                      width="900" height="515" loading="lazy" decoding="async">
-                    <figcaption>Rapid Canyon Run</figcaption>
-                </figure>
+        <section class="content-section adventure" aria-labelledby="trips-title">
+            <h1 class="page-title" id="trips-title">Choose Your Rapids! Adventure</h1>
+            <p>Compare the routes below, then contact our team to discuss dates, group needs, and current river conditions.</p>
+            <div class="trip-grid">
+                <article class="trip-card">
+                    <img src="images/rafting-gallery.jpg" alt="Paddlers navigating a wooded river together" width="900" height="515" fetchpriority="high" decoding="async">
+                    <div class="trip-card-content">
+                        <h2>Los Dientes del Diablo</h2>
+                        <p>Our most challenging listed route follows a string of technical rapids through a narrow canyon. Expect active paddling, splashy drops, and scenic breaks between sections. A good fit for adventurous guests comfortable following guide instructions.</p>
+                        <p><strong>Plan for:</strong> Full day · Advanced · Ages 16+</p>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="images/rafting-optimized.jpg" alt="Kayakers following a green river corridor" width="1200" height="686" loading="lazy" decoding="async">
+                    <div class="trip-card-content">
+                        <h2>Big Mallard</h2>
+                        <p>A lively half-day run with a mix of easy paddling and moderate rapids. Guides introduce river signals and help the crew find a steady rhythm, with time to enjoy the wooded banks along the way.</p>
+                        <p><strong>Plan for:</strong> Half day · Intermediate · Ages 12+</p>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="images/rafting-gallery.jpg" alt="Paddlers navigating a wooded river together" width="900" height="515" loading="lazy" decoding="async">
+                    <div class="trip-card-content">
+                        <h2>Half Day Adventure</h2>
+                        <p>This shorter outing is a friendly introduction to rafting. After a safety briefing, the crew works through gentle moving water with a few small splashy sections. It leaves room in the day for other plans.</p>
+                        <p><strong>Plan for:</strong> 3 hours · Beginner · Ages 8+</p>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="images/rafting-optimized.jpg" alt="Kayakers following a green river corridor" width="1200" height="686" loading="lazy" decoding="async">
+                    <div class="trip-card-content">
+                        <h2>River Run Escape</h2>
+                        <p>Spend a relaxed half day on a scenic stretch with calm pools and occasional wave trains. It is a balanced choice for mixed-experience groups who want both river time and quieter moments.</p>
+                        <p><strong>Plan for:</strong> Half day · Beginner to intermediate · Ages 10+</p>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="images/rafting-gallery.jpg" alt="Paddlers navigating a wooded river together" width="900" height="515" loading="lazy" decoding="async">
+                    <div class="trip-card-content">
+                        <h2>Rapid Canyon Run</h2>
+                        <p>Follow a canyon route with sustained paddling and several brisk rapids. The guide sets the pace and shares a safety talk before launch; guests should be ready to work as a team throughout the run.</p>
+                        <p><strong>Plan for:</strong> 5 hours · Intermediate to advanced · Ages 14+</p>
+                    </div>
+                </article>
             </div>
-            <p>Contact us to ask about availability, group sizes, and the right trip for your crew.</p>
+        </section>
+        <section class="trip-comparison content-section" aria-labelledby="comparison-title">
+            <h2 id="comparison-title">Compare All Trips</h2>
+            <div class="table-wrap">
+                <table>
+                    <caption>Rapids! trip length, difficulty, and suggested minimum age</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Trip</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Difficulty</th>
+                            <th scope="col">Suggested age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Los Dientes del Diablo</th><td>Full day</td><td>Advanced</td><td>16+</td></tr>
+                        <tr><th scope="row">Big Mallard</th><td>Half day</td><td>Intermediate</td><td>12+</td></tr>
+                        <tr><th scope="row">Half Day Adventure</th><td>3 hours</td><td>Beginner</td><td>8+</td></tr>
+                        <tr><th scope="row">River Run Escape</th><td>Half day</td><td>Beginner to intermediate</td><td>10+</td></tr>
+                        <tr><th scope="row">Rapid Canyon Run</th><td>5 hours</td><td>Intermediate to advanced</td><td>14+</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="trip-note">Trip details are planning guidance. Confirm availability, age requirements, equipment, and conditions with Rapids! before booking.</p>
+        </section>
+        <section class="home-cta trip-cta" aria-labelledby="trip-cta-title">
+            <h2 id="trip-cta-title">Need help choosing?</h2>
+            <p>Tell us about your group and we can help you find a suitable outing.</p>
+            <a class="button-link" href="contact.html">Contact Rapids!</a>
         </section>
     </main>
     <footer>
         <p>&copy; 2026 | Rapids! | Joshua Claude Thompson</p>
         <nav class="socialmedia" aria-label="Social media links">
-            <a href="https://www.facebook.com/" aria-label="Facebook">
-                <img src="images/facebook.svg" alt="Facebook icon" width="38" height="38">
-            </a>
-            <a href="https://x.com/" aria-label="X">
-                <img src="images/social-x.svg" alt="X social media icon" width="38" height="38">
-            </a>
-            <a href="https://www.instagram.com/" aria-label="Instagram">
-                <img src="images/instagram.svg" alt="Instagram icon" width="38" height="38">
-            </a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"><img src="images/facebook.svg" alt="" width="38" height="38"></a>
+            <a href="https://x.com/" aria-label="X"><img src="images/social-x.svg" alt="" width="38" height="38"></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><img src="images/instagram.svg" alt="" width="38" height="38"></a>
         </nav>
     </footer>
 </body>
