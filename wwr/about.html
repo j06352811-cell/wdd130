@@ -7,7 +7,7 @@
     <meta name="description" content="Learn about Rapids!, our river-trip approach, history, and rafting adventures.">
     <meta name="author" content="Joshua Claude Thompson">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>About Us | Rapids!</title>
+    <title>Contact Us | Rapids!</title>
 
 </head>
 
@@ -80,6 +80,40 @@
                     <figcaption>Rapid Canyon Run</figcaption>
                 </figure>
             </div>
+        </section>
+
+        <section class="content-section" id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="guest-name">Your Name</label>
+                    <input type="text" id="guest-name" name="guest-name">
+                </div>
+
+                <fieldset>
+                    <legend>How can we help?</legend>
+                    <input type="radio" id="general-inquiry" name="inquiry-type" value="general">
+                    <label for="general-inquiry">General Inquiry</label>
+
+                    <input type="radio" id="reservation-question" name="inquiry-type" value="reservation">
+                    <label for="reservation-question">Reservation Question</label>
+
+                    <input type="radio" id="website-feedback" name="inquiry-type" value="feedback">
+                    <label for="website-feedback">Website Feedback</label>
+                </fieldset>
+
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please send me monthly rafting updates.</label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
 
     </main>
