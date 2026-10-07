@@ -7,7 +7,7 @@
     <meta name="description" content="Explore guided whitewater rafting trips, river adventures, and trip planning with Rapids!">
     <meta name="author" content="Joshua Claude Thompson">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>Home | Rapids! Whitewater Rafting</title>
+    <title>Contact Us | Rapids! Whitewater Rafting</title>
 </head>
 
 <body>
@@ -60,6 +60,25 @@
                 <div class="form-row">
                     <label for="newsletter-email">Email</label>
                     <input id="newsletter-email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <fieldset>
+                    <legend>How can we help?</legend>
+                    <input id="general-inquiry" name="inquiry-type" type="radio" value="general">
+                    <label for="general-inquiry">General Inquiry</label>
+
+                    <input id="reservation-question" name="inquiry-type" type="radio" value="reservation">
+                    <label for="reservation-question">Reservation Question</label>
+
+                    <input id="website-feedback" name="inquiry-type" type="radio" value="feedback">
+                    <label for="website-feedback">Website Feedback</label>
+                </fieldset>
+                <div class="form-row">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="form-row">
+                    <input id="newsletter-opt-in" name="newsletter-opt-in" type="checkbox">
+                    <label for="newsletter-opt-in">Please send me monthly rafting updates.</label>
                 </div>
                 <button type="submit">Ask about a trip</button>
             </form>
